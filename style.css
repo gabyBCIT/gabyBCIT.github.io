@@ -1,0 +1,12 @@
+body {
+  background: -webkit-linear-gradient(to bottom, #71C6B7, #32746D) fixed;
+  background: linear-gradient(to bottom, #71C6B7, #32746D) fixed;
+  font-family: Symbol, Arial, sans-serif;
+  color: #031926;
+}
+
+h1 {
+  font-size: 5em;
+  padding-top: 5%;
+  padding-left: 4%;
+}
