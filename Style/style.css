@@ -1,0 +1,59 @@
+body {
+  background: #E1E7FD;
+  font-family: Railway, Symbol, Arial, sans-serif;
+  color: #434343;
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+  padding-top: 5%;
+  padding-left: 4%;
+  font-weight: normal;
+}
+
+.maroon {
+  color: #741b47;
+  font-weight: bold;
+}
+
+.white {
+  background: #FFF;
+  padding: 10px;
+}
+
+a {
+  color: #434343;
+}
+
+.icons {
+  display: block;
+  font-size: 3em;
+  color: #741b47;
+  text-align: center;
+  padding-top: .2em;
+}
+
+#profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+}
+
+#description {
+  padding-left: 30px;
+}
+#misc {
+  background: url(../Images/Profile.png);
+  background-size:auto;
+  margin: auto;
+
+}
+
+@media (max-width: 768px) {
+  #profile, #description {
+    padding: 15px;
+    padding-top: 20px;
+  }
+}

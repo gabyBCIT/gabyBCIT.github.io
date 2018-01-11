@@ -3,11 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <title>Gaby Lamoureux</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="Style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+    <script defer src="Style/fontawesome-all.js"></script>
   </head>
   <body>
-    <div>
-      <h1>Gaby Lamoureux</h1>
+    <!-- Header row with name. -->
+    <div class="row">
+      <h1 class="text-center">GABY <span class="maroon">LAMOUREUX</span></h1>
+    </div>
+
+    <!-- Body row with photo and description. -->
+    <div class="white row">
+      <div class="col-md-1"></div>
+
+      <!-- Image. -->
+      <div class="col-md-4 col-sm-4" id="profile">
+        <img class="img-responsive img-rounded" src="Images/Profile.jpg" alt="Gaby">
+      </div>
+
+      <!-- Description. -->
+      <div class="col-sm-5" id="description">
+        A multidisciplinary <span class="maroon"> coder</span>, seamstress, and published academic author,
+        Gaby is happiest when throwing herself into a problem she doesn't quite
+        know how to solve. Her work experience including from LGBT advocacy at
+        the <span class="maroon">United Nations</span> in New York to volunteering with special needs adults
+        at a log yard in Vanderhoof, BC, she is always eager to take on a new
+        challenge and learn something new!
+        <br /><br />
+        After staring at BCIT last year, she is now eligible for a <span class="maroon">
+        co-op</span> internship from May to December 2018. She's most interested in
+        positions that solve <span class="maroon">real-world
+        problems</span>, whether that be the speed and reliability of a program, or working on
+        whole programs designed to solve an array of problems. She's already
+        comfortable with <span class="maroon">Java, HTML, CSS and PHP,</span>
+        and is looking forward to improving her C and SQL this term.
+      </div>
+    </div>
+
+    <!-- Footer row with icons. -->
+    <div class="row" id="footer">
+      <div class="col-sm-offset-2 col-xs-offset-1 col-xs-3">
+        <a href="mailto:gabylamoureux@gmail.com">
+          <span class="icons"><i class="fas fa-envelope"></i></span></a>
+      </div>
+      <div class="col-xs-3 col-xs-4">
+        <a href="http://github.com/gabyBCIT">
+          <span class="icons"><i class="fab fa-github"></i></span></a>
+
+      </div>
+      <div class="col-xs-3 col-xs-4">
+        <a href="http://linkedin.com/in/gabylamoureux">
+          <span class="icons"><i class="fab fa-linkedin"></i></span></a>
+      </div>
+
+
+
     </div>
   </body>
