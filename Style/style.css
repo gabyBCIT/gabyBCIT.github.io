@@ -22,8 +22,12 @@ h1 {
   padding: 10px;
 }
 
-a {
-  color: #434343;
+a:link {
+  color: #7d8fd1;
+}
+
+a:visited {
+  color: #741b47;
 }
 
 .icons {
