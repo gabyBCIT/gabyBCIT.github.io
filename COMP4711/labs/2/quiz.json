@@ -5,7 +5,7 @@
     "b": "Float",
     "c": "Numeric",
     "d": "String"
-  }
+  },
 
   {
     "question" : "Which code fragment will check code is identical,
@@ -14,7 +14,7 @@
     "b": "if ( a == b )",
     "c": "if ( !( a != b )",
     "d": "if ( a === b )"
-  }
+  },
 
   {
     "question" : "What type of function is the following:</br></li>
@@ -24,7 +24,7 @@
     "b": "Named",
     "c": "Immediately invoked",
     "d": "Undeclared"
-  }
+  },
 
   {
     "question" : "JavaScript is:",
@@ -32,7 +32,7 @@
     "b": "Moderately typed",
     "c": "Weakly typed",
     "d": "Not typed"
-  }
+  },
 
   {
     "question" : "It is common to use dot notation to refer to object items:
