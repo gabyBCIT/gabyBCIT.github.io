@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+<title>Gaby's Buttons</title>
+</head>
+<body>
+  <h1>Gaby's Buttons</h1>
+
+  <script>
+    let alph = ["A", "B", "C", "D", "E", "F", 'G', 'H', 'I', 'J', 'K', 'L', 'M',
+    'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+    // Creates each button and add texts and an event listener
+    for (let i = 0; i < 26; i++) {
+      let button = document.createElement("BUTTON");
+      let letter = document.createTextNode(alph[i]);
+      button.appendChild(letter);
+      button.addEventListener("click", function() { alert( alph[i] ) } );
+      document.body.appendChild(button);
+
+      // Adds a line break when the buttons are halfway through
+      if (i===12){
+        let brk = document.createElement("BR");
+        document.body.appendChild(brk);
+      }
+    }
+
+  </script>
+</body>

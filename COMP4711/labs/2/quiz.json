@@ -1,0 +1,46 @@
+Quiz: [
+  {
+    "question" : "Which one of these is not a data type in JavaScript?",
+    "a": "Boolean",
+    "b": "Float",
+    "c": "Numeric",
+    "d": "String"
+  }
+
+  {
+    "question" : "Which code fragment will check code is identical,
+     not just equivalent?",
+    "a": "if ( identical ( a, b ) )",
+    "b": "if ( a == b )",
+    "c": "if ( !( a != b )",
+    "d": "if ( a === b )"
+  }
+
+  {
+    "question" : "What type of function is the following:</br></li>
+    <font face='Courier' color=red>var multiply = ( function( a, b ) {</br>
+      return a * b;",
+    "a": "Anonymous",
+    "b": "Named",
+    "c": "Immediately invoked",
+    "d": "Undeclared"
+  }
+
+  {
+    "question" : "JavaScript is:",
+    "a": "Strongly typed",
+    "b": "Moderately typed",
+    "c": "Weakly typed",
+    "d": "Not typed"
+  }
+
+  {
+    "question" : "It is common to use dot notation to refer to object items:
+     <font face='Courier' color=red>student.id</font>.</br>
+      What is the other form of notation for objects?",
+    "a": "Slash notation:   <font face='Courier' color=red>course/title</font>",
+    "b": "Parenthetical notation:   <font face='Courier' color=red>course(title)</font>",
+    "c": "Bracket notation:   <font face='Courier' color=red>course[\"title\"]</font>",
+    "d": "Fleche notation:   <font face='Courier' color=red>course -> title</font>"
+  }
+]
