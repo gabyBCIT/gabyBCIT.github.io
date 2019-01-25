@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+<title>Gaby's Dynamic Quiz Questions</title>
+</head>
+<body>
+  <h1>Gaby's Dynamic Quiz Questions</h1>
+
+  <ol id="list"></ol>
+  <script>
+
+  var jsonURL = "http://gabylamoureux.ca/COMP4711/labs/2/quiz.json";
+  request = new XMLHttpRequest();
+  request.open('GET', jsonURL);
+  request.responseType = 'json';
+  request.send();
+  request.onload = function() {
+    var questions = request.response;
+    populateQuestions(questions);
+  }
+
+  function populateQuestions(questions) {
+    // Asks for the number to display, auto-corrects to 0 or 5 if out of bounds
+    let number = prompt("How many questions would you like to load?", 5);
+    if (number < 0) {
+      number = 0;
+    }
+    if (number > 5) {
+      number = 5;
+    }
+
+    // Populates the questions from JSON
+    let list = document.getElementById('list');
+    for (let i = 0; i < number; i ++) {
+      let litem = document.createElement("LI");
+      let q = document.createTextNode(questions[i]['question'])
+      litem.appendChild(q);
+      list.appendChild(litem);
+
+      // Populates the answers from JSON.
+      let answers = document.createTextNode(questions[i]['answers']);
+      let radio = document.createElement("INPUT");
+      radio.setAttribute("type", "radio");
+      let answer = document.createTextNode("test");
+      radio.appendChild(answer);
+      list.appendChild(radio);
+      //
+      // for (let j = 0; j < 4; j ++) {
+      //   let radio = document.createElement("INPUT");
+      //   radio.setAttribute("type", "radio");
+      //   let answer = document.createTextNode(answers[j]);
+      //   radio.appendChild(answer);
+      // }
+    }
+  }
+
+  </script>
+</body>
