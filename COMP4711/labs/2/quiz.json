@@ -1,41 +1,32 @@
 [
   {
     "question" : "Which one of these is not a data type in JavaScript?",
-    "a": "Boolean",
-    "b": "Float",
-    "c": "Numeric",
-    "d": "String"
+    "answers" :[ "Boolean", "Float", "Numeric", "String" ]
   },
 
   {
-    "question" : "Which code fragment will check code is identical, not just equivalent?",
-    "a": "if ( identical ( a, b ) )",
-    "b": "if ( a == b )",
-    "c": "if ( !( a != b )",
-    "d": "if ( a === b )"
+    "question" : "Which code fragment will check code is identical, \n not just equivalent?",
+    "answers": [ "if ( identical ( a, b ) )", "if ( a == b )",
+     "if ( !( a != b )",  "if ( a === b )" ]
   },
 
   {
-    "question" : "What type of function is the following:</br><font face='Courier' color=red>var multiply = ( function( a, b ) {</br>return a * b;",
-    "a": "Anonymous",
-    "b": "Named",
-    "c": "Immediately invoked",
-    "d": "Undeclared"
+    "question" : "What type of function is the following:</br></li> <font face='Courier' color=red>var multiply = ( function( a, b ) {</br> return a * b;",
+    "answers" : [ "Anonymous", "Named", "Immediately invoked", "Undeclared" ]
   },
 
   {
     "question" : "JavaScript is:",
-    "a": "Strongly typed",
-    "b": "Moderately typed",
-    "c": "Weakly typed",
-    "d": "Not typed"
+    "answers": [ "Strongly typed", "Moderately typed",
+      "Weakly typed", "Not typed" ]
   },
 
   {
-    "question" : "It is common to use dot notation to refer to object items: <font face='Courier' color=red>student.id</font>.</br>What is the other form of notation for objects?",
-    "a": "Slash notation:   <font face='Courier' color=red>course/title</font>",
-    "b": "Parenthetical notation:   <font face='Courier' color=red>course(title)</font>",
-    "c": "Bracket notation:   <font face='Courier' color=red>course[\"title\"]</font>",
-    "d": "Fleche notation:   <font face='Courier' color=red>course -> title</font>"
+    "question" : "It is common to use dot notation to refer to object items: <font face='Courier' color=red>student.id</font>.</br> What is the other form of notation for objects?",
+    "answers": [ "Slash notation:   <font face='Courier' color=red>course/title</font>",
+      "Parenthetical notation:   <font face='Courier' color=red>course(title)</font>",
+      "Bracket notation:   <font face='Courier' color=red>course[\"title\"]</font>",
+      "Fleche notation:   <font face='Courier' color=red>course -> title</font>"
+    ]
   }
 ]
