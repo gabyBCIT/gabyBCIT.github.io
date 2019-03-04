@@ -27,29 +27,48 @@
     if (number > 5) {
       number = 5;
     }
-
+console.log(questions)
     // Populates the questions from JSON
     let list = document.getElementById('list');
     for (let i = 0; i < number; i ++) {
-      let litem = document.createElement("LI");
-      let q = document.createTextNode(questions[i]['question'])
-      litem.appendChild(q);
-      list.appendChild(litem);
+      const question = questions[i].question;
+      const answers = questions[i].answers;
+      // console.log(`question: ${question}, answers: ${answers}`)
+      // console.log(question, answers, 1, 2, 3, 4)
+      // console.log(question + ', ' + answers)
 
-      // Populates the answers from JSON.
-      let answers = document.createTextNode(questions[i]['answers']);
-      let radio = document.createElement("INPUT");
-      radio.setAttribute("type", "radio");
-      let answer = document.createTextNode("test");
-      radio.appendChild(answer);
-      list.appendChild(radio);
-      //
-      // for (let j = 0; j < 4; j ++) {
-      //   let radio = document.createElement("INPUT");
-      //   radio.setAttribute("type", "radio");
-      //   let answer = document.createTextNode(answers[j]);
-      //   radio.appendChild(answer);
-      // }
+      let listItem = document.createElement("li");
+      listItem.innerHTML = question;
+      // let qElement = document.createElement("div");
+      // qElement.innerHTML = question;
+      // let qNode = document.createTextNode(question)
+      // listItem.appendChild(qElement);
+      list.appendChild(listItem);
+
+      // // Populates the answers from JSON.
+      // let answers = document.createTextNode(questions[i]['answers']);
+      // let radio = document.createElement("INPUT");
+      // radio.setAttribute("type", "radio");
+      // let answer = document.createTextNode("test");
+      // radio.appendChild(answer);
+      // list.appendChild(radio);
+
+      for (let j = 0; j < answers.length; j++) {
+        let radio = document.createElement("input");
+        radio.setAttribute("type", "radio");
+        radio.setAttribute("name", i);
+        radio.value = j;
+
+        let aNode = document.createTextNode(answers[j]);
+        let label = document.createElement("label")
+        label.appendChild(document.createElement("br"));
+        label.appendChild(radio);
+        label.appendChild(aNode);
+
+
+        console.log(answers[j])
+        listItem.appendChild(label);
+      }
     }
   }
 

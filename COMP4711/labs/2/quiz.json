@@ -11,7 +11,7 @@
   },
 
   {
-    "question" : "What type of function is the following:</br></li> <font face='Courier' color=red>var multiply = ( function( a, b ) {</br> return a * b;",
+    "question" : "What type of function is the following:<br /> <font face='Courier' color=red>var multiply = ( function( a, b ) {<br /> return a * b; <br />}",
     "answers" : [ "Anonymous", "Named", "Immediately invoked", "Undeclared" ]
   },
 
