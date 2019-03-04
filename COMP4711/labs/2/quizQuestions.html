@@ -21,50 +21,40 @@
   function populateQuestions(questions) {
     // Asks for the number to display, auto-corrects to 0 or 5 if out of bounds
     let number = prompt("How many questions would you like to load?", 5);
+
+    if(isNaN(number)){
+      alert("Numbers only please.")
+      populateQuestions(questions);
+    }
+
     if (number < 0) {
       number = 0;
-    }
-    if (number > 5) {
+    } else if (number > 5) {
       number = 5;
     }
+
 console.log(questions)
     // Populates the questions from JSON
     let list = document.getElementById('list');
     for (let i = 0; i < number; i ++) {
       const question = questions[i].question;
       const answers = questions[i].answers;
-      // console.log(`question: ${question}, answers: ${answers}`)
-      // console.log(question, answers, 1, 2, 3, 4)
-      // console.log(question + ', ' + answers)
 
-      let listItem = document.createElement("li");
+      const listItem = document.createElement("li");
       listItem.innerHTML = question;
-      // let qElement = document.createElement("div");
-      // qElement.innerHTML = question;
-      // let qNode = document.createTextNode(question)
-      // listItem.appendChild(qElement);
       list.appendChild(listItem);
 
-      // // Populates the answers from JSON.
-      // let answers = document.createTextNode(questions[i]['answers']);
-      // let radio = document.createElement("INPUT");
-      // radio.setAttribute("type", "radio");
-      // let answer = document.createTextNode("test");
-      // radio.appendChild(answer);
-      // list.appendChild(radio);
 
       for (let j = 0; j < answers.length; j++) {
-        let radio = document.createElement("input");
+        const radio = document.createElement("input");
         radio.setAttribute("type", "radio");
         radio.setAttribute("name", i);
         radio.value = j;
 
-        let aNode = document.createTextNode(answers[j]);
-        let label = document.createElement("label")
+        const label = document.createElement("label")
         label.appendChild(document.createElement("br"));
         label.appendChild(radio);
-        label.appendChild(aNode);
-
+        label.innerHTML += answers[j];
 
         console.log(answers[j])
         listItem.appendChild(label);
