@@ -45,9 +45,9 @@ window.onload = function(e) {
 const populateQuiz = function(quizDiv) {
 
   for (var i = 0; i < quiz.length; i++) {
+    // Creates the question object
     const questionObject = quiz[i];
     const question = questionObject.question;
-    console.log(question);
     if (question) {
       totalAnswers++;
       // Adds question to form
