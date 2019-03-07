@@ -68,7 +68,7 @@ window.onload = function(e) {
     // Array to store the questions for local storage
     const questionsArray = [];
 
-    // loops through all the forms
+    // loops through all the forms and adds data to a question obect
     for (let i = 0; i < count; i++) {
       let questionObject = {};
       questionObject["question"] = document.getElementById(`question${i}`).value;
@@ -86,17 +86,19 @@ window.onload = function(e) {
         }
         // answerArray.push(document.getElementById(`q${i}a${a}`).value);
       }
+
+      // Adds answer array to corresponding pair in question object
       questionObject["answers"] = answerArray;
       console.log(questionObject);
       console.log(document.getElementById(`question${i}`).value);
 
+      // Adds this question to the array of questions
       questionsArray.push(questionObject)
     }
-    console.log("7980")
-    // localstorage.add(wordsArray)
-    localStorage.setItem('fuckers', JSON.stringify(questionsArray));
-    const fucker = JSON.parse(localStore.getItem('fuckers'))
-    console.log(fucker)
+
+    // Saves the quiz to local storage
+    localStorage.setItem('quiz', JSON.stringify(questionsArray));
+
   })
 
 }
