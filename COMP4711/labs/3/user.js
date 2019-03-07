@@ -38,6 +38,8 @@ window.onload = function(e) {
     let quizName = document.querySelector('h1');
     quizName.innerHTML += `&emsp;${correctAnswers}/${totalAnswers}`;
     quizName.innerHTML += `&emsp;${(correctAnswers/totalAnswers)*100}%`;
+
+    document.getElementById("saveButton").disabled = true;
   })
 }
 
