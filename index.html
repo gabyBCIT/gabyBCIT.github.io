@@ -3,7 +3,8 @@
 <!-- TODO: Format links so they're a different colour -->
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale =1,
+    maximum-scale=1.0" />
     <title>Gaby Lamoureux</title>
     <link rel="stylesheet" type="text/css" href="Style/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="Style/style.css"/>
@@ -12,59 +13,171 @@
   <body>
     <!-- Header row with name. -->
     <div class="row">
-      <h1 class="text-center">GABY <span class="maroon">LAMOUREUX</span></h1>
+      <h1 class="col-sm-offset-6 col-xs-offset-1">GABY <span class="maroon bold">LAMOUREUX</span></h1>
     </div>
 
     <!-- Body row with photo and description. -->
     <div class="white row">
-      <div class="col-md-1"></div>
-
-      <!-- Image. -->
-      <div class="col-md-4" id="profile">
-        <img class="img-responsive img-rounded" src="Images/Profile.jpg" alt="Gaby">
-      </div>
+      <div class="col-sm-1"></div>
 
       <!-- Description. -->
-      <div class="col-md-5" id="description">
-        A multidisciplinary  coder, seamstress, and published academic author,
-        Gaby is happiest when throwing herself into a problem she doesn't quite
-        know how to solve. With experience ranging website content management at
-        the UN to managing employee data for the Superbowl, she 
-		is always eager to take on a new challenge and learn something new! 
-        <br /><br />
-		She's currently studying Technical Programming at CST, and is looking forward to working
-		this summer. She's most interested in positions that solve real-world
-        problems, whether that be the speed and reliability of a program, or working on
-        multi-layered, complex problems. 
-		<br /><br />
-		
-		<span class= "maroon">Winter 2019 Courses:</span>
-		<ul>
-		<li><a href = "4711.html">COMP 4711: Intro to Internet Software Development</a></li>
-		<li>COMP 3951: Technical Programming 1</li>
-		<li>COMP 3900: Computer Projects Practicum 1</li>
-		<li>COMP 4900: Computer Projects Practicum 2</li>
-		</ul>
+      <div class="col-sm-5" id="description">
+        <br />
+        Hi! I'm Gaby, a multidisciplinary coder, seamstress, and published academic author.
+         I'm happiest when throwing myself into a problem I don't
+         quite know how to solve. With experience ranging website
+         content management at the UN to managing employee data
+         for the Superbowl, I'm always looking to take on a new challenge
+         and learn something new!
+         <br />
+         <br />
+         I'm currently studying Technical Programming at CST,
+         and looking forward to starting work after graduating
+         in December 2019. I'm most interested in positions that
+         solve real-world problems, whether that be the reliability
+         of a program, creating software that makes life a little easier,
+         or using design to help share knowledge.
+    		<br /><br />
+
+        <!-- Class List -->
+    		<span class= "maroon">Winter 2019 Courses:</span>
+    		<ul>
+      		<li>COMP 4956: System Programming</li>
+          <li>COMP 4952: Technical Programming 2</li>
+          <li>COMP 3900: Operating Systems</li>
+          <li>COMP 4900: Applied Probability and Statistics</li>
+    		</ul>
+      </div>
+
+      <!-- Image. -->
+        <div class="col-sm-4" id="profile">
+          <img class="img-responsive img-circle" src="Images/Profile.jpg" alt="Gaby">
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class ="pink row">
+      <h2 class="maroon">Projects</h2>
+      <div class="projectcard col-md-3 col-sm-6">
+        <img class="green img-responsive img-rounded" src ="Images/dododay.png">
+        <h3>DodoTracker</h3>
+        <h4>Design, Agile Development</h4>
+        <p> Designed a simple habit tracker with
+          daily and monthly process display. </p>
+      </div>
+      <div class="projectcard col-md-3 col-sm-6">
+        <div class="img-responsive blue img-rounded">
+          <img class ="img-responsive img-rounded screenshots" src ="Images/Plants.png">
+        </div>
+        <h3>Floral Trauma</h3>
+        <h4>Multimedia Team Lead</h4>
+        <p> An online multiplayer combat game, created
+         in a 24-person team. </p>
+      </div>
+      <div class="projectcard col-md-3 col-sm-6">
+        <div class="img-responsive green img-rounded">
+          <img class ="img-responsive img-rounded screenshots" src ="Images/Maria.png">
+        </div>
+        <h3>Marina Cafe</h3>
+        <h4>Design, HTML and CSS Implementation</h4>
+        <p> Created a four-page responsive website for
+        a cafe as a school project.</p>
+      </div>
+      <div class="projectcard col-md-3 col-sm-6">
+        <img class="blue img-responsive img-rounded" src ="Images/disasterpets.png">
+
+        <h3>Disaster Pets</h3>
+        <h4>Design, Responsiveness</h4>
+        <p> Worked with a client in a team of four
+        to realize a database-centered web app.</p>
       </div>
     </div>
+
+    <!-- Education -->
+    <div class="white row">
+      <h2 class="maroon">Education</h2>
+      <!-- Concordia -->
+        <div class="col-sm-1"></div>
+          <div class="col-sm-5 container"  id="educationcard">
+            <div class="col-xs-10 ">
+            <img class= "img-responsive row" src="Images/Concordia.png">
+          </div>
+          <div  class = "row col-xs-12">
+            <h3>Concordia University</h3>
+            <span class ="medium"> BA in Anthropology</span> <br />
+            Minor: Interdisciplinary Studies in Sexuality<br />
+            Published Work: <a href="http://journalofsexuality.weebly.com/uploads/3/0/3/0/30308803/7._hard_to_hear.pdf">
+              Hard to Hear: Access to Sexuality Resources in Deaf Communities</a>
+          </div>
+      </div>
+
+      <!-- BCIT -->
+      <div class="col-sm-6 container" id="educationcard">
+        <img class= "img-responsive row col-xs-8" src="Images/BCIT.png">
+      <div class = "row col-xs-12">
+        <h3>BC Institute of Technology</h3>
+        <span class ="medium">Computer Systems Technology Diploma</span> <br />
+        Technical Programming Option <br />
+        December 2019 (Projected)
+        </div>
+  </div>
+  </div>
+
+
+
+  <!-- Contact Section -->
+  <div class="row lightgreen">
+    <h2 class ="maroon">Contact Me</h2>
+    <div class="col-sm-offset-2 col-sm-3 links container">
+      <h3>Interested in working together? Get in touch!</h3>
+      <br />
+      <div class="order-1">
+        <div class="row container">
+          <a href="http://github.com/gabyBCIT">
+            <span class="icons"><i class="fab fa-github"></i></span>
+          <p class="navy label">/gabyBCIT</p></a>
+        </div>
+        <div class="row container">
+          <a href="http://linkedin.com/in/gabylamoureux">
+            <span class="icons"><i class="fab fa-linkedin"></i></span>
+            <p class="navy label">/gabylamoureux</p></a>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="col-sm-offset-1 col-sm-4">
+      <form validate="" id="contact-form" enctype="multipart/form-data" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe414aS3B88Cxz4RaTbSw4NdpaSVLmz_5V8LCelXhxdPbIQRg/formResponse" method="POST" accept-charset="UTF-8" target="_self">
+          <label for="name">Name <span class="maroon">*</span></label>
+          <div>
+            <input id="name" class="form-control" type="text" name="entry.2005620554" required="">
+          </div>
+
+          <label for="email">Email <span class="maroon">*</span></label>
+          <div>
+            <input class="form-control" id="email" type="email" name="entry.1045781291" required="">
+          </div>
+
+          <label for="comment">Comment <span class="maroon">*</span></label>
+          <div>
+            <textarea class="form-control" id="comment" name="entry.839337160" style="height: 150px" required=""></textarea>
+          </div>
+
+          <div>
+            <input id="sendbutton" type="submit" class="btn" value="Send">
+          </div>
+        </form>
+    </div>
+  </div>
+
 
     <!-- Footer row with icons. -->
-    <div class="row" id="footer">
-      <div class="col-xs-offset-1 col-xs-3">
-        <a href="mailto:gabylamoureux@gmail.com">
-          <span class="icons"><i class="fas fa-envelope"></i></span></a>
-      </div>
-      <div class="col-xs-3 col-sm-4">
-        <a href="http://github.com/gabyBCIT">
-          <span class="icons"><i class="fab fa-github"></i></span></a>
+    <div class="row container col-sm-offset-1" id="footer">
+      <p>&copy; Gaby Lamoureux 2019<br />
+      <p class="smalltext">This site's <a target="blank" href="https://github.com/gabyBCIT/gabyBCIT.github.io">source is on github.</a>
+      <br /> It's made with HTML, CSS, and Bootstrap. Nothing else.</p>
+    </p>
+</div>
 
-      </div>
-      <div class="col-xs-3 col-sm-4">
-        <a href="http://linkedin.com/in/gabylamoureux">
-          <span class="icons"><i class="fab fa-linkedin"></i></span></a>
-      </div>
-
-
-
-    </div>
   </body>

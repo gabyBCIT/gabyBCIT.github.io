@@ -1,63 +1,171 @@
 body {
-  background: #E1E7FD;
-  font-family: Arial, sans-serif;
-  color: #434343;
-  font-size: 1.5em;
+  background: #CFE2F3;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #231942;
+  font-size: 1.6em;
+  font-weight: 100;
+  overflow-x: hidden;
+
 }
 
+/* Headers */
 h1 {
   font-size: 3em;
   padding-top: 5%;
-  padding-left: 4%;
-  font-weight: normal;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 100;
+  padding-bottom: 1%;
+}
+
+h3 {
+  font-size: 1.7em;
+  text-align: left;
+  font-weight: 100;
+}
+h4 {
+  font-size: .8em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/* Colours */
+.green {
+  background-color: #81D2C7;
+}
+
+.lightgreen {
+  background-color: #F1FFFA;
+  border-top-width: thin;
+  border-top-color: #81D2C7;
+  border-top-style: solid;
+}
+
+.blue {
+  background: #CFE2F3;
 }
 
 .maroon {
   color: #741b47;
-  font-weight: bold;
 }
 
 .white {
   background: #FFF;
-  padding: 10px;
+  padding: 2%;
 }
 
+.pink {
+  background: #FFF1FC;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+}
+
+.navy {
+  color: #231942;
+}
+
+/* Text */
+
+.bold {
+  font-weight: 600;
+}
+
+.medium {
+  font-weight: 400;
+}
+
+.right {
+  float: right;
+}
+
+.smalltext {
+  font-size: .8em;
+  line-height: 110%;
+  color: #fffffff;
+}
+
+label, .label {
+  font-size: 1.2em;
+  font-weight: 100;
+  margin-top: 2%;
+}
+
+/* Links */
 a:link {
-  color: #7d8fd1;
+  color: #741b47;
 }
 
 a:visited {
   color: #741b47;
 }
 
+/* Images */
 .icons {
-  display: block;
   font-size: 3em;
   color: #741b47;
-  text-align: center;
   padding-top: .2em;
+
 }
 
+.screenshots {
+  padding-left: 5%;
+  padding-right: 5%;
+  float: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/* IDs */
 #profile {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30px;
+  padding-left: 3%;
+}
+
+#educationcard {
+  line-height: 170%;
+  padding-left: 7%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 #description {
-  padding-left: 30px;
+  padding-left: 3%;
 }
-#misc {
-  background: url(../Images/Profile.png);
-  background-size:auto;
-  margin: auto;
 
+#sendbutton {
+  margin-top:5%;
+  margin-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  background-color: #741b47;
+  color: white;
+  float: right;
+  font-size: 110%
 }
+
+#sendbutton:hover {
+  background-color: #A0376B;
+}
+
+#footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+/* Media */
 
 @media (max-width: 768px) {
   #profile, #description {
-    padding: 15px;
-    padding-top: 20px;
+    padding: 3%;
+    padding-top: 2%;
   }
 }
